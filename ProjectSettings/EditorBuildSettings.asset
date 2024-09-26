@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena_Perdedor2.unity
     guid: f9ff5736ce61ff546924537d71fa9216
+  - enabled: 1
+    path: Assets/Practica4/Scenes/PrincipalJuego.unity
+    guid: 88e3d6d41e8d13e40961242d3df37828
+  - enabled: 1
+    path: Assets/Practica4/Scenes/CambioEscena.unity
+    guid: 1bad4c0f45cb4d044948bb401d361b77
   m_configObjects: {}
