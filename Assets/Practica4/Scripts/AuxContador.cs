@@ -9,10 +9,10 @@ public class AuxContador : MonoBehaviour
     
     // Start is called before the first frame update
    [SerializeField] TextMeshProUGUI mensaje;
-    [SerializeField] ColectorObj aux_cont_enemigos;
+    
     int contador;
     [SerializeField] TextMeshProUGUI texto_contador;
-    [SerializeField] ColectorObj aux;
+    [SerializeField] ColectorObj aux; //objetivos eliminados
     void Start()
     {
         contador = 30;
@@ -23,13 +23,13 @@ public class AuxContador : MonoBehaviour
         while(contador >= 0){
             contador--;
             texto_contador.text = contador.ToString();
-             if(aux.contador >= 9) break;
+             if(aux.contador >= 9) break;   
             yield return new WaitForSeconds(0.5f); 
         }
         if(aux.contador >= 9){
             insertarMensaje("Ganaste");
         }else{
-            insertarMensaje("Terminaste");
+            insertarMensaje("Perdiste");
         }
        
     }
